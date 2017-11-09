@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "mdm.cuf.person.adapter.vba.corp.server.PersonMemberVbaCorpServerProperties",
+      "name": "mdm-cuf-person-adapter-vba-corp",
+      "type": "mdm.cuf.person.adapter.vba.corp.server.PersonMemberVbaCorpServerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "mdm.cuf.person.adapter.vba.corp.server.PersonMemberVbaCorpServerProperties",
+      "name": "mdm-cuf-person-adapter-vba-corp.demo-property",
+      "type": "java.lang.String"
+    }
+  ]
+}

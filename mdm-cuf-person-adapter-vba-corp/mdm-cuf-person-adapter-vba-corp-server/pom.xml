@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>mdm.cuf.person.adapter.vba.corp</groupId>
+		<artifactId>mdm-cuf-person-adapter-vba-corp-parentpom</artifactId>
+		<version>0.1-SNAPSHOT</version>
+		<relativePath>../mdm-cuf-person-adapter-vba-corp-parentpom</relativePath>
+	</parent>
+
+	<artifactId>mdm-cuf-person-adapter-vba-corp-server</artifactId>
+	<packaging>war</packaging>
+	<name>mdm-cuf-person-adapter-vba-corp-server</name>
+	<description>mdm-cuf-person-adapter-vba-corp Server War</description>
+
+	<dependencies>
+		<!-- mdm-cuf-core dependencies -->
+		<dependency>
+			<groupId>mdm.cuf.core</groupId>
+			<artifactId>mdm-cuf-core</artifactId>
+			<scope>test</scope>
+			<type>test-jar</type>
+		</dependency>
+		<dependency>
+			<groupId>mdm.cuf.core</groupId>
+			<artifactId>mdm-cuf-core-server</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mdm.cuf.core</groupId>
+			<artifactId>mdm-cuf-core-server</artifactId>
+			<scope>test</scope>
+			<type>test-jar</type>
+		</dependency>
+
+		<!-- mdm-cuf-person dependencies -->
+		<dependency>
+			<groupId>mdm.cuf.person</groupId>
+			<artifactId>mdm-cuf-person-bio</artifactId>
+		</dependency>
+
+
+		<!-- spring boot dependencies -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- spring kafka -->
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- integration testing dependencies -->
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-spring</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>mdm.cuf.person.adapter.vba.corp</groupId>
+		<artifactId>mdm-cuf-person-adapter-vba-corp-parentpom</artifactId>
+		<version>0.1-SNAPSHOT</version>
+		<relativePath>./mdm-cuf-person-adapter-vba-corp-parentpom</relativePath>
+	</parent>
+	
+	<artifactId>mdm-cuf-person-adapter-vba-corp-all</artifactId>
+	<packaging>pom</packaging>
+	<name>${project.artifactId}</name>
+	<description>mdm-cuf-person-adapter-vba-corp Reactor Pom</description>
+	
+	<modules>
+		<module>mdm-cuf-person-adapter-vba-corp-parentpom</module>
+		<module>mdm-cuf-person-adapter-vba-corp-server</module>
+	</modules>
+</project>

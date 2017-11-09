@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+        <groupId>mdm.cuf.core</groupId>
+		<artifactId>mdm-cuf-core-parentpom</artifactId>
+        <version>0.1-SNAPSHOT</version> 								<!-- READ AND HEED: this should match mdm-cuf-core.version property below. -->
+        <relativePath/>
+    </parent>
+
+	<groupId>mdm.cuf.person.adapter.vba.corp</groupId>
+	<artifactId>mdm-cuf-person-adapter-vba-corp-parentpom</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>${project.artifactId}</name>
+	<description>mdm-cuf-person-adapter-vba-corp Parent Pom</description>
+
+	<properties>
+		<mdm-cuf-core.version>0.1-SNAPSHOT</mdm-cuf-core.version> 		<!-- READ AND HEED: this should match the parent pom version above. -->
+		<mdm-cuf-person.version>0.1-SNAPSHOT</mdm-cuf-person.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- mdm-cuf-person dependencies -->
+			<dependency>
+			    <groupId>mdm.cuf.person</groupId>
+			    <artifactId>mdm-cuf-person-bio</artifactId>
+			    <version>${mdm-cuf-person.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>mdm.cuf.person</groupId>
+			    <artifactId>mdm-cuf-person-bio</artifactId>
+			    <version>${mdm-cuf-person.version}</version>
+			    <type>test-jar</type>
+			    <scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>
